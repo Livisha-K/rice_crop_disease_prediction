@@ -1,26 +1,5 @@
-# rice_crop_disease_prediction
-AgroLeafGuard: Rice Crop Disease Prediction System
-
 <!DOCTYPE html>
 <html>
-
-<head>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: auto;
-        }
-
-        code {
-            background-color: #f4f4f4;
-            padding: 5px;
-            border: 1px solid #ddd;
-            display: block;
-            margin: 10px 0;
-        }
-    </style>
-</head>
 
 <body>
 <h1>AgroLeafGuard: Rice Crop Disease Prediction System</h1>
@@ -44,32 +23,31 @@ AgroLeafGuard: Rice Crop Disease Prediction System
 
 <h2>Setup</h2>
 
-<ol>
-    <li>Clone the repository:</li>
+</li>
+    <li>Clone the repository:
 
-    <code>git clone https://github.com/Livisha-K/rice_crop_disease_prediction</code>
+   </li> git clone https://github.com/Livisha-K/rice_crop_disease_prediction.git
 
-    <li>Install the required dependencies:</li>
+<li>Install the required dependencies:</li>
 
-    <code>pip install tensorflow scikit-learn opencv-python numpy matplotlib</code>
+pip install tensorflow scikit-learn opencv-python numpy matplotlib
 
-    <li>Download the dataset and place it in the specified directory <code>C:\Deep Learning\CNN\rice_leaf_diseases</code>. Ensure the dataset structure follows the format:</li>
-
-    <code>
-        C:\Deep Learning\CNN\rice_leaf_diseases
-        ├── Bacterial leaf blight
-        │   ├── image1.jpg
-        │   ├── image2.jpg
-        │   └── ...
-        ├── Brown spot
-        │   ├── image1.jpg
-        │   ├── image2.jpg
-        │   └── ...
-        └── Leaf smut
-            ├── image1.jpg
-            ├── image2.jpg
-            └── ...
-    </code>
+<li>Download the dataset and place it in the specified directory <code>C:\Deep Learning\CNN\rice_leaf_diseases</code>. Ensure the dataset structure follows the format:</li>
+</li> 
+<code>C:\Deep Learning\CNN\rice_leaf_diseases
+├── Bacterial leaf blight
+│   ├── image1.jpg
+│   ├── image2.jpg
+│   └── ...
+├── Brown spot
+│   ├── image1.jpg
+│   ├── image2.jpg
+│   └── ...
+└── Leaf smut
+    ├── image1.jpg
+    ├── image2.jpg
+    └── ...
+</code>
 </ol>
 
 <h2>Usage</h2>
@@ -77,23 +55,19 @@ AgroLeafGuard: Rice Crop Disease Prediction System
 <ol>
     <li>Run the script <code>rice_leaf_diseases.ipynb</code> to train the CNN model:</li>
 
-    <code>rice_leaf_diseases.ipynb</code>
+<p><code>rice_leaf_diseases.ipynb</code>This will train the model using the dataset and display training/validation metrics.</p>
 
-    <p>This will train the model using the dataset and display training/validation metrics.</p>
+<li>After training, you can use the trained model to make predictions on new images:</li>
 
-    <li>After training, you can use the trained model to make predictions on new images:</li>
-
-    <code>python rice_leaf_diseases.ipynb</code>
-
-    <p>This will load a sample image (<code>t1.JPG</code>) from the specified path and display the predicted disease.</p>
+<p><code>rice_leaf_diseases.ipynb</code>This will load a sample image (<code>t1.JPG</code>) from the specified path and display the predicted disease.</p>
 </ol>
 
 <h2>Model Architecture</h2>
 
 <p>The CNN model architecture consists of convolutional layers with max-pooling, followed by densely connected layers. The final layer uses the softmax activation function for multi-class classification.</p>
 
-<code>
-    Model Architecture:
+
+<code>Model Architecture:
     ___________________________________________________________
     Layer (type)                 Output Shape              Param #
     =================================================================
